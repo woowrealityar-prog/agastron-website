@@ -16,7 +16,7 @@ const PROBLEMS_SOLVED = [
             "End-to-end RPA + AI to eliminate manual workflows and reduce operational costs by 60%+.",
         listLeft: ["End-to-End RPA", "Workflow Intelligence", "Exception Handling"],
         listRight: ["Human-in-the-Loop", "Legacy Integration", "60%+ Cost Reduction"],
-        image: "/assets/imgs/pages/img-30.webp",
+        image: "/assets/imgs/pages/agastron/intelligent.webp",
         itemClass: "pb-40",
     },
     {
@@ -25,7 +25,7 @@ const PROBLEMS_SOLVED = [
             "Build, deploy, and monitor production ML pipelines that learn and adapt continuously.",
         listLeft: ["Feature Stores & CI/CD", "Model Drift Detection", "Automated Retraining"],
         listRight: ["Real-time Inference", "Batch Data Pipelines", "Scale Monitoring"],
-        image: "/assets/imgs/pages/img-31.webp",
+        image: "/assets/imgs/pages/agastron/pipeline.webp",
         itemClass: "pb-40",
     },
     {
@@ -34,7 +34,7 @@ const PROBLEMS_SOLVED = [
             "Custom AI copilots embedded into your products that enhance user productivity and workflow velocity.",
         listLeft: ["Context-Aware Prompting", "RAG & Vector Memory", "Enterprise Data Guardrails"],
         listRight: ["Multi-Agent Execution", "Role-Based Permissions", "Instant Productivity"],
-        image: "/assets/imgs/pages/img-32.webp",
+        image: "/assets/imgs/pages/agastron/aipilot.webp",
         itemClass: "pb-40",
     },
     {
@@ -43,7 +43,7 @@ const PROBLEMS_SOLVED = [
             "Image recognition, defect detection, and video analytics for manufacturing, retail, and security.",
         listLeft: ["Automated Defect Detection", "Visual Quality Inspection", "Real-time Video Feeds"],
         listRight: ["Spatial Intelligence", "Safety & Perimeter Analytics", "Edge Deployment"],
-        image: "/assets/imgs/pages/img-33.webp",
+        image: "/assets/imgs/pages/agastron/com-vision.webp",
         itemClass: "pb-40",
     },
     {
