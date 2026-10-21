@@ -42,7 +42,7 @@ export default function Section1() {
                 <img
                     className="img-cover scale-up"
                     data-speed=".4"
-                    src="/assets/imgs/pages/img-154.webp"
+                    src="/assets/imgs/pages/agastron/analytics.webp"
                     alt="Data and Analytics"
                     width={1920}
                     height={800}

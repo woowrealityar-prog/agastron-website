@@ -23,37 +23,37 @@ const PLUS_ICON = (
 
 const PROCESS_ITEMS = [
     {
-        img: "/assets/imgs/pages/img-138.webp",
+        img: "/assets/imgs/pages/agastron/erp.webp",
         alt: "ERP & Core Systems",
         title: "01. ERP & Core Systems",
         desc: "Intelligent ERP modernisation, migration, and enhancement for mission-critical operations.",
     },
     {
-        img: "/assets/imgs/pages/img-139.webp",
+        img: "/assets/imgs/pages/agastron/crm.webp",
         alt: "CRM & Customer Intelligence",
         title: "02. CRM & Customer Intelligence",
         desc: "360° customer platforms powered by AI that personalise every touchpoint at scale.",
     },
     {
-        img: "/assets/imgs/pages/img-140.webp",
+        img: "/assets/imgs/pages/agastron/cloud.webp",
         alt: "Cloud-Native Architecture",
         title: "03. Cloud-Native Architecture",
         desc: "Design and build cloud-native microservices architectures on AWS, Azure and GCP.",
     },
     {
-        img: "/assets/imgs/pages/img-141.webp",
+        img: "/assets/imgs/pages/agastron/data.webp",
         alt: "Data Platform Engineering",
         title: "04. Data Platform Engineering",
         desc: "Unified data lakes, warehouses, and lakehouses that power your analytics at any scale.",
     },
     {
-        img: "/assets/imgs/pages/img-138.webp",
+        img: "/assets/imgs/pages/agastron/security.webp",
         alt: "Security & Compliance",
         title: "05. Security & Compliance",
         desc: "Zero-trust security architecture, SOC 2, GDPR, HIPAA and ISO 27001 compliance frameworks.",
     },
     {
-        img: "/assets/imgs/pages/img-139.webp",
+        img: "/assets/imgs/pages/agastron/platform.webp",
         alt: "Platform Scalability",
         title: "06. Platform Scalability",
         desc: "Auto-scaling, global CDN, and edge computing strategies for enterprise-grade performance.",

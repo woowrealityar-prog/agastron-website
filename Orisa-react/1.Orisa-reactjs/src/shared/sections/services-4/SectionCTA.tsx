@@ -6,7 +6,7 @@ export default function SectionCTA() {
         <section className="sec-9-home-8">
             <div className="sec-9-home-8__bg" aria-hidden="true">
                 <img
-                    src="/assets/imgs/pages/home-8/sec9-bg-blur.webp"
+                    src="/assets/imgs/pages/agastron/cta.webp"
                     alt="Agastron Data & Analytics"
                     width={1920}
                     height={1080}
@@ -46,7 +46,7 @@ export default function SectionCTA() {
                                     className="sec-9-home-8__card-visors w-100 scale-img-from-to"
                                     data-value-1="1.5"
                                     data-value-2="1"
-                                    src="/assets/imgs/pages/home-8/sec9-card-visors.webp"
+                                    src="/assets/imgs/pages/agastron/cta1.webp"
                                     alt="Data Maturity Assessment"
                                     width={500}
                                     height={350}

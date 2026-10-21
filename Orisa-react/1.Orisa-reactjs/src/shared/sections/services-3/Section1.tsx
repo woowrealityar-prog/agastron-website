@@ -64,7 +64,7 @@ export default function Section1() {
                         >
                             <div data-speed=".8">
                                 <img
-                                    src="/assets/imgs/pages/img-155.webp"
+                                    src="/assets/imgs/pages/agastron/enterplat.webp"
                                     alt="orisa"
                                     width={1900}
                                     height={800}

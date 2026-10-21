@@ -54,10 +54,10 @@ const SKILLS_LIST_ITEMS = [
 ];
 
 const AVATAR_IMGS = [
-    "/assets/imgs/template/avatar/avatar-10.webp",
-    "/assets/imgs/template/avatar/avatar-11.webp",
-    "/assets/imgs/template/avatar/avatar-12.webp",
-    "/assets/imgs/template/avatar/avatar-13.webp",
+    "/assets/imgs/pages/agastron/com1.webp",
+    "/assets/imgs/pages/agastron/com2.webp",
+    "/assets/imgs/pages/agastron/com3.webp",
+    "/assets/imgs/pages/agastron/com4.webp",
 ];
 
 const FOOTER_TAGS = [
@@ -106,7 +106,7 @@ export default function SectionVisionMission() {
                                     <div className="sec-2-home-5__card sec-2-home-5__card--hero rounded-4 overflow-hidden rounded-4 p-relative">
                                         <div className="sec-2-home-5__hero-bg" />
                                         <img
-                                            src="/assets/imgs/pages/img-103.webp"
+                                            src="/assets/imgs/pages/agastron/mission.webp"
                                             alt="Our Vision"
                                             width={600}
                                             height={400}
@@ -185,7 +185,7 @@ export default function SectionVisionMission() {
                                         </div>
                                         <div className="sec-2-home-5__product-img-wrap p-absolute bottom-0 end-0">
                                             <img
-                                                src="/assets/imgs/pages/img-104.webp"
+                                                src="/assets/imgs/pages/agastron/mission1.webp"
                                                 alt="Product"
                                                 width={365}
                                                 height={210}
@@ -220,7 +220,7 @@ export default function SectionVisionMission() {
                                         </div>
                                         <div className="p-absolute bottom-0 end-0">
                                             <img
-                                                src="/assets/imgs/pages/img-105.webp"
+                                                src="/assets/imgs/pages/agastron/mission2.webp"
                                                 alt="agastron"
                                                 width={447}
                                                 height={103}
@@ -235,7 +235,7 @@ export default function SectionVisionMission() {
                                             <div className="sec-2-home-5__card sec-2-home-5__card--small sec-2-home-5__card--img rounded-4 h-100 fix">
                                                 <div className="img">
                                                     <img
-                                                        src="/assets/imgs/pages/img-106.webp"
+                                                        src="/assets/imgs/pages/agastron/mission3.webp"
                                                         alt="Asset Protection"
                                                         width={242}
                                                         height={248}

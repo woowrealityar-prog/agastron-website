@@ -12,11 +12,10 @@ const ARROW_SVG = (
 );
 
 const AVATARS = [
-    { src: "/assets/imgs/template/avatar/avatar-10.webp", alt: "agastron", hiddenOnMobile: false },
-    { src: "/assets/imgs/template/avatar/avatar-11.webp", alt: "agastron", hiddenOnMobile: false },
-    { src: "/assets/imgs/template/avatar/avatar-12.webp", alt: "agastron", hiddenOnMobile: false },
-    { src: "/assets/imgs/template/avatar/avatar-13.webp", alt: "agastron", hiddenOnMobile: false },
-    { src: "/assets/imgs/template/avatar/avatar-14.webp", alt: "agastron", hiddenOnMobile: true },
+    { src: "/assets/imgs/pages/agastron/com1.webp", alt: "agastron", hiddenOnMobile: false },
+    { src: "/assets/imgs/pages/agastron/com2.webp", alt: "agastron", hiddenOnMobile: false },
+    { src: "/assets/imgs/pages/agastron/com3.webp", alt: "agastron", hiddenOnMobile: false },
+    { src: "/assets/imgs/pages/agastron/com4.webp", alt: "agastron", hiddenOnMobile: false },
 ];
 
 export default function Section1() {
@@ -59,6 +58,7 @@ export default function Section1() {
                                         width={65}
                                         height={65}
                                         className="img-cover"
+                                        style={{ filter: "none" }}
                                         loading="lazy"
                                     />
                                 </div>
@@ -73,7 +73,7 @@ export default function Section1() {
                         <div className="rounded-5 overflow-hidden">
                             <div className="img anim-zoomin">
                                 <img
-                                    src="/assets/imgs/pages/img-122.webp"
+                                    src="/assets/imgs/pages/agastron/aboutbanner.webp"
                                     alt="About Agastron"
                                     width={1700}
                                     height={830}

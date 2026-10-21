@@ -71,7 +71,7 @@ const SERVICES = [
             "Data lakehouse & warehouse modeling",
             "Batch & real-time transformation",
         ],
-        img: "/assets/imgs/pages/img-58.webp",
+        img: "/assets/imgs/pages/agastron/dataeng.webp",
     },
     {
         num: "02",
@@ -85,7 +85,7 @@ const SERVICES = [
             "Power BI, Tableau & Looker integration",
             "Automated scheduled reporting",
         ],
-        img: "/assets/imgs/pages/img-59.webp",
+        img: "/assets/imgs/pages/agastron/bi.webp",
     },
     {
         num: "03",
@@ -99,7 +99,7 @@ const SERVICES = [
             "Real-time fraud & anomaly alerts",
             "Continuous metric aggregation",
         ],
-        img: "/assets/imgs/pages/img-60.webp",
+        img: "/assets/imgs/pages/agastron/realtime.webp",
     },
     {
         num: "04",
@@ -113,7 +113,7 @@ const SERVICES = [
             "Automated data quality checks",
             "Compliance (GDPR, HIPAA, SOC 2)",
         ],
-        img: "/assets/imgs/pages/img-61.webp",
+        img: "/assets/imgs/pages/agastron/dgovern.webp",
     },
     {
         num: "05",
@@ -127,7 +127,7 @@ const SERVICES = [
             "Cohort & longitudinal analysis",
             "Causal inference & uplift modeling",
         ],
-        img: "/assets/imgs/pages/img-62.webp",
+        img: "/assets/imgs/pages/agastron/adanal.webp",
     },
     {
         num: "06",
@@ -141,7 +141,7 @@ const SERVICES = [
             "Predictive forecasting & trend alerts",
             "AI-generated executive summaries",
         ],
-        img: "/assets/imgs/pages/img-58.webp",
+        img: "/assets/imgs/pages/agastron/aiinsight.webp",
     },
 ];
 

@@ -51,7 +51,7 @@ export default function Section1() {
                 >
                     <img
                         className="anim-zoomin"
-                        src="/assets/imgs/pages/img-153.webp"
+                        src="/assets/imgs/pages/agastron/dtbanner.webp"
                         alt="Agastron Digital Transformation"
                         width={1920}
                         height={570}

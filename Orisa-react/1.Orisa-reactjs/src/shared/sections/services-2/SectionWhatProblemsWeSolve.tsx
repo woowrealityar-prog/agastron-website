@@ -52,7 +52,7 @@ const PROBLEMS_SOLVED = [
             "Demand forecasting, churn prediction, pricing optimization and supply chain intelligence.",
         listLeft: ["Demand Sensing", "Customer Churn Mitigation", "Dynamic Pricing Models"],
         listRight: ["Supply Chain Forecasting", "Anomaly Detection", "Revenue Maximization"],
-        image: "/assets/imgs/pages/img-30.webp",
+        image: "/assets/imgs/pages/agastron/forecast.webp",
         itemClass: "pb-40",
     },
     {
@@ -61,7 +61,7 @@ const PROBLEMS_SOLVED = [
             "Multilingual NLP, document intelligence and knowledge extraction at enterprise scale.",
         listLeft: ["Document Understanding", "Contract Intelligence", "Multilingual NLP"],
         listRight: ["Semantic Search", "Sentiment & Intent Analysis", "Knowledge Graphs"],
-        image: "/assets/imgs/pages/img-31.webp",
+        image: "/assets/imgs/pages/agastron/language.webp",
         itemClass: "pb-50",
     },
 ];

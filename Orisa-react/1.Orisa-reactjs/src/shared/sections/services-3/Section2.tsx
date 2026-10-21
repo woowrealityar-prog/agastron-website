@@ -51,8 +51,8 @@ export default function Section2() {
                     <div className="col-lg-3 col-md-6">
                         <div
                             className="at-service-card card-1 rounded-4 overflow-hidden p-relative bg-cover"
-                            style={{ backgroundImage: "url(/assets/imgs/pages/img-76.webp)" }}
-                            data-background="/assets/imgs/pages/img-76.webp"
+                            style={{ backgroundImage: "url(/assets/imgs/pages/agastron/ep1.webp)" }}
+                            data-background="/assets/imgs/pages/agastron/ep1.webp"
                         >
                             <Link to="#" className="p-absolute top-0 left-0 w-100 h-100" />
                             <div className="at-service-card-content text-white p-absolute bottom-0 start-0 end-0 m-xxl-5 m-4">
@@ -74,7 +74,7 @@ export default function Section2() {
                             <Link to="#" className="p-absolute bottom-0 start-0 end-0">
                                 <img
                                     className="img-cover"
-                                    src="/assets/imgs/pages/img-77.webp"
+                                    src="/assets/imgs/pages/agastron/ep2.webp"
                                     alt="Cloud-Native"
                                     width={400}
                                     height={500} loading="lazy" />
@@ -98,7 +98,7 @@ export default function Section2() {
                             <Link to="#" className="p-absolute top-0 left-0">
                                 <img
                                     className="img-cover"
-                                    src="/assets/imgs/pages/img-78.webp"
+                                    src="/assets/imgs/pages/agastron/ep3.webp"
                                     alt="Zero-Trust"
                                     width={400}
                                     height={300} loading="lazy" />
@@ -106,7 +106,7 @@ export default function Section2() {
                             <Link to="#" className="p-absolute bottom-0 start-0 end-0">
                                 <img
                                     className="img-cover"
-                                    src="/assets/imgs/pages/img-79.webp"
+                                    src="/assets/imgs/pages/agastron/ep3.1.webp"
                                     alt="Zero-Trust"
                                     width={400}
                                     height={300} loading="lazy" />
@@ -130,7 +130,7 @@ export default function Section2() {
                             <Link to="#" className="p-absolute bottom-0 start-0 end-0">
                                 <img
                                     className="img-cover"
-                                    src="/assets/imgs/pages/img-80.webp"
+                                    src="/assets/imgs/pages/agastron/ep4.webp"
                                     alt="Infinite Scale"
                                     width={400}
                                     height={500} loading="lazy" />

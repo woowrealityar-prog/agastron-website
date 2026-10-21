@@ -6,7 +6,7 @@ export default function SectionCTA() {
         <section className="sec-9-home-8">
             <div className="sec-9-home-8__bg" aria-hidden="true">
                 <img
-                    src="/assets/imgs/pages/home-8/sec9-bg-blur.webp"
+                    src="/assets/imgs/pages/agastron/cta.webp"
                     alt="Agastron AI"
                     width={1920}
                     height={1080}
@@ -40,7 +40,21 @@ export default function SectionCTA() {
                     <div className="col-xl-5">
                         <Link className="sec-9-home-8__card" to="/contact-1" aria-label="Talk to an Expert">
                             <div className="sec-9-home-8__card-media">
-                                <img className="sec-9-home-8__card-visors w-100 scale-img-from-to" data-value-1="1.5" data-value-2="1" src="/assets/imgs/pages/home-8/sec9-card-visors.webp" alt="Agastron AI Consultation" width={500} height={350} loading="lazy" />
+                                <img
+                                    className="sec-9-home-8__card-visors w-100 scale-img-from-to"
+                                    data-value-1="1.3"
+                                    data-value-2="1"
+                                    src="/assets/imgs/pages/agastron/cta1.webp"
+                                    alt="Agastron AI Consultation"
+                                    width={500}
+                                    height={350}
+                                    style={{
+                                        height: "100%",
+                                        objectFit: "cover",
+                                        mixBlendMode: "normal",
+                                    }}
+                                    loading="lazy"
+                                />
                             </div>
                             <div className="sec-9-home-8__card-overlay">
                                 <span className="sec-9-home-8__card-kicker">

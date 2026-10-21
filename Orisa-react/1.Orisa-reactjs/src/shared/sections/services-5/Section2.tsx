@@ -19,7 +19,7 @@ const CAPABILITIES: Capability[] = [
         desc: "Assess, re-architect and migrate legacy monoliths to modern, scalable microservices.",
         tags: ["Architecture", "Migration", "Microservices"],
         img: {
-            src: "/assets/imgs/pages/home-15/sec-4-project-1.webp",
+            src: "/assets/imgs/pages/agastron/legacy.webp",
             alt: "Legacy Modernisation",
             width: 1800,
             height: 1013,
@@ -32,7 +32,7 @@ const CAPABILITIES: Capability[] = [
         desc: "End-to-end digital product design — from UX strategy to high-fidelity prototypes.",
         tags: ["UX Strategy", "UI Design", "Prototypes"],
         img: {
-            src: "/assets/imgs/pages/home-15/sec-4-project-2.webp",
+            src: "/assets/imgs/pages/agastron/digital.webp",
             alt: "Digital Product Design",
             width: 1800,
             height: 1013,
@@ -45,7 +45,7 @@ const CAPABILITIES: Capability[] = [
         desc: "Mine, analyse, and redesign business processes using process mining and simulation.",
         tags: ["Process Mining", "Simulation", "Analytics"],
         img: {
-            src: "/assets/imgs/pages/home-11/img-8.webp",
+            src: "/assets/imgs/pages/agastron/process.webp",
             alt: "Process Intelligence",
             width: 2400,
             height: 1600,
@@ -58,7 +58,7 @@ const CAPABILITIES: Capability[] = [
         desc: "CI/CD pipelines, platform engineering, and agile delivery frameworks at enterprise scale.",
         tags: ["CI/CD", "Platform Eng", "Automation"],
         img: {
-            src: "/assets/imgs/pages/home-15/sec-4-project-3.webp",
+            src: "/assets/imgs/pages/agastron/devops.webp",
             alt: "DevOps & Agile",
             width: 1800,
             height: 1013,
@@ -71,7 +71,7 @@ const CAPABILITIES: Capability[] = [
         desc: "We partner with your teams through every stage of transformation to drive adoption.",
         tags: ["Adoption", "Enablement", "Culture"],
         img: {
-            src: "/assets/imgs/pages/home-15/sec-4-project-4.webp",
+            src: "/assets/imgs/pages/agastron/management.webp",
             alt: "Change Management",
             width: 1800,
             height: 1013,
@@ -84,7 +84,7 @@ const CAPABILITIES: Capability[] = [
         desc: "Comprehensive digital transformation roadmaps anchored to business outcomes and ROI.",
         tags: ["Roadmaps", "Business ROI", "Governance"],
         img: {
-            src: "/assets/imgs/pages/home-15/sec-4-project-1.webp",
+            src: "/assets/imgs/pages/agastron/strategy.webp",
             alt: "Digital Strategy",
             width: 1800,
             height: 1013,
