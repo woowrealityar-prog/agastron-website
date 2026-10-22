@@ -44637,4 +44637,11 @@ body.at-magic-cursor #magic-cursor {
   transition-delay: 200ms;
   transform: scale(1) rotate(360deg);
 }
+
+/* Ensure mobile menu link-swap never displays duplicate labels */
+.at-offcanvas .at-link-swap .text-2,
+.at-offcanvas-menu .at-link-swap .text-2,
+.at-offcanvas-2-area .at-link-swap .text-2 {
+  display: none !important;
+}
 /*# sourceMappingURL=main.css.map */
