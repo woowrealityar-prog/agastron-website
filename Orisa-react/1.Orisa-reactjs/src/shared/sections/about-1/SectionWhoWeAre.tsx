@@ -26,7 +26,7 @@ export default function SectionWhoWeAre() {
             <div className="container-fluid sec-3-home-8__container">
                 <div className="row align-items-start justify-content-between g-5 g-xxl-0">
                     {/* LEFT: typography + tags */}
-                    <div className="col-xxl-5 col-md-6 col-lg-6">
+                    <div className="col-xxl-5 col-xl-5 col-lg-6 col-12">
                         <span className="at-btn common-black bg-transparent mb-15 rounded-0 p-0">
                             <span className="text-uppercase">
                                 <span className="text-1">Who We Are</span>
@@ -53,8 +53,8 @@ export default function SectionWhoWeAre() {
                     </div>
 
                     {/* RIGHT: two staggered photos */}
-                    <div className="col-xxl-6 col-md-6 col-lg-6">
-                        <div className="sec-3-home-8__media d-flex justify-content-xxl-end justify-content-lg-center justify-content-start align-items-start">
+                    <div className="col-xxl-6 col-xl-7 col-lg-6 col-12 mt-lg-0 mt-4">
+                        <div className="sec-3-home-8__media d-flex justify-content-xxl-end justify-content-lg-end justify-content-center align-items-start">
                             <div className="sec-3-home-8__photo sec-3-home-8__photo--narrow anim-zoomin-wrap at_fade_anim" data-start="100%" data-delay=".15" data-fade-from="right">
                                 <img className="anim-zoomin" data-speed=".8" src="/assets/imgs/pages/agastron/about1.webp" alt="Agastron Group" width={400} height={500} loading="lazy" />
                             </div>
