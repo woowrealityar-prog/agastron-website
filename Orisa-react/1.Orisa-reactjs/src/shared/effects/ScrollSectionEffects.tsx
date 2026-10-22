@@ -106,11 +106,6 @@ export default function ScrollSectionEffects() {
           const items = wrapper.querySelectorAll<HTMLElement>(".item");
           if (!items.length) return;
 
-          // CSS chain `.list { height:100% } > .wrapper { height:auto }` breaks the
-          // percentage resolution, so `.item:first-child { min-height:100% }` collapses
-          // to content height. Force the first item to at least 100vh via inline style so
-          // wrapper/list/section-fix get the correct size for the pin scrub window.
-          gsap.set(items[0], { minHeight: "100vh", height: "auto" });
           items.forEach((item, index) => {
             if (index !== 0) gsap.set(item, { yPercent: 100 });
           });
@@ -179,9 +174,7 @@ export default function ScrollSectionEffects() {
           });
         });
 
-        // —— 51. scroll-section card stacking (skip if inside .section-fix) ——
-        // Only run pin-stacking on desktop (>=992px). On mobile (<992px), pinning full-height
-        // sections with scrub causes severe touch-scroll lagging, jank, and missing/blank content.
+        // —— 51. scroll-section card stacking (Native template origin behavior) ——
         const initScroll = (
           section: HTMLElement,
           items: NodeListOf<HTMLElement>,
@@ -220,15 +213,14 @@ export default function ScrollSectionEffects() {
           });
         };
 
-        gsap.matchMedia().add("(min-width: 992px)", () => {
-          document.querySelectorAll<HTMLElement>(".scroll-section").forEach((section) => {
-            if (section.closest(".section-fix")) return;
-            const wrapper = section.querySelector<HTMLElement>(".wrapper");
-            const items = wrapper?.querySelectorAll<HTMLElement>(".item");
-            if (!items?.length) return;
-            const direction = section.classList.contains("horizontal-section") ? "horizontal" : "vertical";
-            initScroll(section, items, direction);
-          });
+        const scrollSections = document.querySelectorAll<HTMLElement>(".scroll-section");
+        scrollSections.forEach((section) => {
+          if (section.closest(".section-fix")) return;
+          const wrapper = section.querySelector<HTMLElement>(".wrapper");
+          const items = wrapper?.querySelectorAll<HTMLElement>(".item");
+          if (!items?.length) return;
+          const direction = section.classList.contains("horizontal-section") ? "horizontal" : "vertical";
+          initScroll(section, items, direction);
         });
       });
 
