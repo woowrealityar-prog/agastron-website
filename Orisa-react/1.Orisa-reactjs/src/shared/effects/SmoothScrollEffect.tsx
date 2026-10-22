@@ -142,7 +142,6 @@ export default function SmoothScrollEffect() {
       import("gsap/ScrollTrigger").then((mod) => {
         mod.default?.refresh();
       });
-      currentSmoother.refresh(true);
 
       const els = Array.from(
         document.querySelectorAll<HTMLElement>(
@@ -151,8 +150,8 @@ export default function SmoothScrollEffect() {
       );
       if (els.length > 0 && currentSmoother.effects) {
         currentSmoother.effects(els, { refresh: false });
-        currentSmoother.refresh(true);
       }
+      currentSmoother.refresh(true);
     };
 
     requestAnimationFrame(refreshRoute);

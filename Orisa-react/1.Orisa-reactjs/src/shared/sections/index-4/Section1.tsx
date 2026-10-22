@@ -101,7 +101,7 @@ export default function Section1() {
                         preload="metadata"
                         poster="/assets/imgs/pages/agastron/hero-banner.webp"
                         className="p-absolute top-0 start-0 w-100 h-100 d-none d-md-block"
-                        style={{ objectFit: "cover", zIndex: 0, pointerEvents: "none" }}
+                        style={{ objectFit: "cover", zIndex: 0, pointerEvents: "none", willChange: "transform", transform: "translateZ(0)" }}
                     >
                         <source src="/assets/imgs/pages/agastron/hero.mp4" type="video/mp4" />
                     </video>
