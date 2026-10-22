@@ -125,11 +125,14 @@ export default function SmoothScrollEffect() {
 
     // Reset scroll to top on page change
     const smoother = scrollSmootherRef.current;
-    if (smoother?.scrollTo) {
+    if (smoother?.scrollTop) {
+      smoother.scrollTop(0);
+    } else if (smoother?.scrollTo) {
       smoother.scrollTo(0, false);
-    } else {
-      window.scrollTo(0, 0);
     }
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
 
     let attempts = 0;
     const refreshRoute = () => {
@@ -139,6 +142,7 @@ export default function SmoothScrollEffect() {
         if (attempts++ < 30) requestAnimationFrame(refreshRoute);
         return;
       }
+      currentSmoother.scrollTop?.(0);
       import("gsap/ScrollTrigger").then((mod) => {
         mod.default?.refresh();
       });

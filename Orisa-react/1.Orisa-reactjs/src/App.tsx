@@ -1,4 +1,5 @@
-import { Route, Routes } from "react-router-dom";
+import { useLayoutEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import MainLayout from "@/layouts/MainLayout";
 import About1Page from "@/pages/About1Page";
 import About2Page from "@/pages/About2Page";
@@ -77,9 +78,34 @@ import TermsOfServicePage from "@/pages/TermsOfServicePage";
 import CookiePolicyPage from "@/pages/CookiePolicyPage";
 import NotFoundPage from "@/pages/NotFoundPage";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useLayoutEffect(() => {
+    if (typeof window !== "undefined" && "scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+
+    import("gsap/ScrollSmoother").then((mod) => {
+      const smoother = mod.default?.get?.();
+      if (smoother) {
+        smoother.scrollTop?.(0);
+        smoother.scrollTo?.(0, false);
+      }
+    });
+  }, [pathname]);
+
+  return null;
+}
+
 export default function App() {
   return (
-    <Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
       <Route element={<MainLayout headerStyle={4} footerStyle={4} />}>
         <Route path="/" element={<Home4Page />} />
         <Route path="/index-4" element={<Home4Page />} />
@@ -232,5 +258,6 @@ export default function App() {
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
+    </>
   );
 }

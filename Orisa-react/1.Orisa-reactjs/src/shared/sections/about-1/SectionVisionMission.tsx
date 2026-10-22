@@ -169,7 +169,7 @@ export default function SectionVisionMission() {
                                         <blockquote className="neutral-900 fz-font-lg fw-500 mb-4">
                                             &quot;To be Asia's most trusted multi-vertical technology holding company — building institutions, not just businesses.&quot;
                                         </blockquote>
-                                        <div className="sec-2-home-5__avatars-row d-flex gap-2">
+                                        <div className="sec-2-home-5__avatars-row d-flex gap-2 p-relative z-1 mb-2">
                                             {AVATAR_IMGS.map((src, i) => (
                                                 <div key={i} className="sec-2-home-5__avatar-sm">
                                                     <img
@@ -183,7 +183,8 @@ export default function SectionVisionMission() {
                                                 </div>
                                             ))}
                                         </div>
-                                        <div className="sec-2-home-5__product-img-wrap p-absolute bottom-0 end-0">
+                                        <span className="neutral-500 small d-block mt-3 pb-120 pb-md-160">[ Since 2012 ]</span>
+                                        <div className="sec-2-home-5__product-img-wrap p-absolute bottom-0 end-0" style={{ maxWidth: "260px" }}>
                                             <img
                                                 src="/assets/imgs/pages/agastron/mission1.webp"
                                                 alt="Product"
@@ -191,7 +192,7 @@ export default function SectionVisionMission() {
                                                 height={210}
                                                 className="sec-2-home-5__product-img at_fade_anim"
                                                 data-delay=".5"
-                                                style={{ width: "auto", height: "auto", filter: "none !important" }}
+                                                style={{ width: "100%", height: "auto", objectFit: "contain" }}
                                                 loading="lazy"
                                             />
                                         </div>
