@@ -72,9 +72,9 @@ export default function SmoothScrollEffect() {
         scrollSmootherRef.current = ScrollSmoother.create({
           wrapper: smoothWrapper,
           content: smoothContent,
-          smooth: 0.8,
+          smooth: 1.35,
           effects: true,
-          smoothTouch: 0.08,
+          smoothTouch: 0.15,
           ignoreMobileResize: true,
         });
       }
@@ -114,9 +114,7 @@ export default function SmoothScrollEffect() {
     };
   }, []);
 
-  // Re-scan `[data-speed]` / `[data-lag]` only on SUBSEQUENT route changes (not the initial
-  // render — `effects: true` at create time already scanned). ScrollSmoother only auto-scans
-  // once, so SPA navigation needs us to re-apply manually for the new page's sections.
+  // On route changes: reset scroll to top and refresh ScrollSmoother + ScrollTrigger
   const firstRenderRef = useRef(true);
   useEffect(() => {
     if (firstRenderRef.current) {
@@ -124,26 +122,40 @@ export default function SmoothScrollEffect() {
       return;
     }
     let cancelled = false;
-    let attempts = 0;
 
-    const apply = () => {
+    // Reset scroll to top on page change
+    const smoother = scrollSmootherRef.current;
+    if (smoother?.scrollTo) {
+      smoother.scrollTo(0, false);
+    } else {
+      window.scrollTo(0, 0);
+    }
+
+    let attempts = 0;
+    const refreshRoute = () => {
       if (cancelled) return;
-      const smoother = scrollSmootherRef.current;
-      if (!smoother?.effects) {
-        if (attempts++ < 60) requestAnimationFrame(apply);
+      const currentSmoother = scrollSmootherRef.current;
+      if (!currentSmoother?.refresh) {
+        if (attempts++ < 30) requestAnimationFrame(refreshRoute);
         return;
       }
+      import("gsap/ScrollTrigger").then((mod) => {
+        mod.default?.refresh();
+      });
+      currentSmoother.refresh(true);
+
       const els = Array.from(
         document.querySelectorAll<HTMLElement>(
           "#smooth-content [data-speed], #smooth-content [data-lag]",
         ),
       );
-      if (els.length === 0) return;
-      smoother.effects(els, { refresh: false });
-      smoother.refresh?.(true);
+      if (els.length > 0 && currentSmoother.effects) {
+        currentSmoother.effects(els, { refresh: false });
+        currentSmoother.refresh(true);
+      }
     };
 
-    requestAnimationFrame(apply);
+    requestAnimationFrame(refreshRoute);
     return () => {
       cancelled = true;
     };

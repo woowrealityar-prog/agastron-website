@@ -97,7 +97,6 @@ export default function MainLayout({
   const [searchOpen, setSearchOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
-  const footerRef = useRef<HTMLElement | null>(null);
 
   const handlers = useMemo(
     () => ({
@@ -179,7 +178,6 @@ export default function MainLayout({
 
   const HeaderComponent = HEADER_COMPONENTS[headerStyle] ?? Header1;
   const FooterComponent = FOOTER_COMPONENTS[footerStyle] ?? Footer1;
-  const isFooterFloating = footerStyle === 2;
 
   return (
     <MobileMenuCloneProvider>
@@ -201,10 +199,8 @@ export default function MainLayout({
           <main className={mainClass}>
             <Outlet />
           </main>
-          {!noFooter && isFooterFloating ? <div className="footer-placeholder" aria-hidden="true" /> : null}
-          {!noFooter && !isFooterFloating ? <FooterComponent /> : null}
+          {!noFooter ? <FooterComponent /> : null}
         </div>
-        {!noFooter && isFooterFloating ? <Footer2 ref={footerRef} /> : null}
       </div>
 
       <BackToTop />

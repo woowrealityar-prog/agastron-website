@@ -70,7 +70,7 @@ function FooterServiceTag({ label }: { label: string }) {
 
 const Footer2 = forwardRef<HTMLElement, Record<string, never>>(function Footer2(_, ref) {
   return (
-    <footer ref={ref} className="footer-fixed-bottom bg-neutral-950 changeless">
+    <footer ref={ref} className="bg-neutral-950 changeless">
       <div className="at-footer-area mp-footer-style mp-footer-style-2 pt-100 pb-0">
         <div className="container">
           <div className="row g-md-5 g-4 pb-md-5 pb-4">
@@ -180,7 +180,7 @@ const Footer2 = forwardRef<HTMLElement, Record<string, never>>(function Footer2(
                 </div>
               </div>
             </div>
-            <div className="row d-none d-md-block">
+            <div className="row">
               <div className="col-12">
                 <ul className="d-flex flex-wrap gap-lg-4 gap-2 ps-0 pt-4 pb-2 mb-0">
                   {LEGAL_LINKS.map((item) => (
