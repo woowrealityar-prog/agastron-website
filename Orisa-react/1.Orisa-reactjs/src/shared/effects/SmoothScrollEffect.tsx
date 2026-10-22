@@ -72,9 +72,9 @@ export default function SmoothScrollEffect() {
         scrollSmootherRef.current = ScrollSmoother.create({
           wrapper: smoothWrapper,
           content: smoothContent,
-          smooth: 1.35,
+          smooth: 0.8,
           effects: true,
-          smoothTouch: 0.15,
+          smoothTouch: 0.08,
           ignoreMobileResize: true,
         });
       }
