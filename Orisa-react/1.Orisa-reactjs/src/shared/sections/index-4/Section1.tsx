@@ -84,13 +84,23 @@ export default function Section1() {
                 <div
                     className="sec-1-home-4 bg-linear-opacity p-relative mt-20 rounded-5 mx-lg-3 mx-2 overflow-hidden"
                 >
+                    {/* Mobile Poster Image (instant loading, zero GPU lag on phones) */}
+                    <img
+                        src="/assets/imgs/pages/agastron/hero-banner.webp"
+                        alt="Agastron Group"
+                        className="p-absolute top-0 start-0 w-100 h-100 d-block d-md-none"
+                        style={{ objectFit: "cover", zIndex: 0 }}
+                        loading="eager"
+                    />
+                    {/* Desktop Video Background (smoothly played on tablet & desktop screens) */}
                     <video
                         autoPlay
                         muted
                         loop
                         playsInline
                         preload="metadata"
-                        className="p-absolute top-0 start-0 w-100 h-100"
+                        poster="/assets/imgs/pages/agastron/hero-banner.webp"
+                        className="p-absolute top-0 start-0 w-100 h-100 d-none d-md-block"
                         style={{ objectFit: "cover", zIndex: 0, pointerEvents: "none" }}
                     >
                         <source src="/assets/imgs/pages/agastron/hero.mp4" type="video/mp4" />
