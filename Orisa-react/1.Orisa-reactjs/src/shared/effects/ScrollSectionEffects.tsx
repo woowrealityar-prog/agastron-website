@@ -106,6 +106,11 @@ export default function ScrollSectionEffects() {
           const items = wrapper.querySelectorAll<HTMLElement>(".item");
           if (!items.length) return;
 
+          // CSS chain `.list { height:100% } > .wrapper { height:auto }` breaks the
+          // percentage resolution, so `.item:first-child { min-height:100% }` collapses
+          // to content height. Force the first item to at least 100vh via inline style so
+          // wrapper/list/section-fix get the correct size for the pin scrub window.
+          gsap.set(items[0], { minHeight: "100vh", height: "auto" });
           items.forEach((item, index) => {
             if (index !== 0) gsap.set(item, { yPercent: 100 });
           });
@@ -118,6 +123,7 @@ export default function ScrollSectionEffects() {
             scrollTrigger: {
               trigger: sectionFix,
               pin: true,
+              anticipatePin: 1,
               start: "top top",
               end: () => `+=${scrollDistance}%`,
               scrub: 1,
