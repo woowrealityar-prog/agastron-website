@@ -180,6 +180,8 @@ export default function ScrollSectionEffects() {
         });
 
         // —— 51. scroll-section card stacking (skip if inside .section-fix) ——
+        // Only run pin-stacking on desktop (>=992px). On mobile (<992px), pinning full-height
+        // sections with scrub causes severe touch-scroll lagging, jank, and missing/blank content.
         const initScroll = (
           section: HTMLElement,
           items: NodeListOf<HTMLElement>,
@@ -218,13 +220,15 @@ export default function ScrollSectionEffects() {
           });
         };
 
-        document.querySelectorAll<HTMLElement>(".scroll-section").forEach((section) => {
-          if (section.closest(".section-fix")) return;
-          const wrapper = section.querySelector<HTMLElement>(".wrapper");
-          const items = wrapper?.querySelectorAll<HTMLElement>(".item");
-          if (!items?.length) return;
-          const direction = section.classList.contains("horizontal-section") ? "horizontal" : "vertical";
-          initScroll(section, items, direction);
+        gsap.matchMedia().add("(min-width: 992px)", () => {
+          document.querySelectorAll<HTMLElement>(".scroll-section").forEach((section) => {
+            if (section.closest(".section-fix")) return;
+            const wrapper = section.querySelector<HTMLElement>(".wrapper");
+            const items = wrapper?.querySelectorAll<HTMLElement>(".item");
+            if (!items?.length) return;
+            const direction = section.classList.contains("horizontal-section") ? "horizontal" : "vertical";
+            initScroll(section, items, direction);
+          });
         });
       });
 

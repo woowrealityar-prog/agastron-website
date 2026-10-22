@@ -139,6 +139,12 @@ export default function MainLayout({
         return;
       }
       if (t.closest(".at-header-sidebar-btn, .navbar-toggler, .at-menu-bar")) {
+        // If the button has its own direct React onClick (like Header4), prevent duplicate handling
+        const btn = t.closest(".at-header-sidebar-btn, .navbar-toggler, .at-menu-bar") as HTMLElement | null;
+        if (btn?.tagName === "BUTTON") {
+          // Handled directly by button's onClick prop
+          return;
+        }
         e.preventDefault();
         setSidebarOpen(true);
         return;

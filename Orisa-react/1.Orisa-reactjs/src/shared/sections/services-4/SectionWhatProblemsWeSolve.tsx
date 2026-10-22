@@ -89,6 +89,16 @@ export default function SectionWhatProblemsWeSolve({ className }: SectionWhatPro
                 .at-service-area .scroll-section .item .container {
                     background-color: var(--at-neutral-50, #f7f7f7) !important;
                 }
+                @media (max-width: 991px) {
+                    .at-service-area .scroll-section .item {
+                        min-height: auto !important;
+                        position: relative !important;
+                        margin-bottom: 40px !important;
+                    }
+                    .at-service-area .scroll-section .item:last-child {
+                        margin-bottom: 0 !important;
+                    }
+                }
             `}</style>
             <section className="at-service-area bg-neutral-50 rounded-5 mx-lg-3 mx-2 pt-120 pb-80">
                 <div className="container">
