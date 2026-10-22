@@ -74,7 +74,7 @@ export default function SmoothScrollEffect() {
           content: smoothContent,
           smooth: 1.35,
           effects: true,
-          smoothTouch: 0.15,
+          smoothTouch: 0,
           ignoreMobileResize: true,
         });
       }

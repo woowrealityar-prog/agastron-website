@@ -10,14 +10,14 @@ export default function Header8() {
             <div className="row align-items-center">
               <div className="col-xl-3 col-6">
                 <div className="at-header-logo">
-                  <Link to="/" className="d-inline-flex align-items-center gap-2 text-decoration-none">
+                  <Link to="/" className="d-inline-flex align-items-center text-decoration-none">
                     <img
-                      width={28}
-                      height={30}
-                      src="/assets/imgs/template/logo/favicon.svg"
-                      alt="Orisa"
-                      style={{ width: "auto", height: "auto" }} loading="lazy" />
-                    <h6 className="fw-700 fz-24 mb-0">Orisa</h6>
+                      height={38}
+                      src="/assets/imgs/template/logo/agastron-logo-dark.svg"
+                      alt="Agastron"
+                      style={{ height: "38px", width: "auto" }}
+                      loading="lazy"
+                    />
                   </Link>
                 </div>
               </div>

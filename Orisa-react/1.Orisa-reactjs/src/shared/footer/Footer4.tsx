@@ -20,7 +20,7 @@ const SOCIAL_ARROW = (
 );
 
 const SOCIAL_LINKS = [
-    { label: "Twitter", href: "#" },
+    { label: "Youtube", href: "#" },
     { label: "Facebook", href: "#" },
     { label: "Instagram", href: "#" },
     { label: "Linkedin", href: "#" },
@@ -48,10 +48,9 @@ const COMPANY_LINKS = [
 ];
 
 const LEGAL_LINKS = [
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
-    { label: "Cookie Policy", href: "#" },
-    { label: "Contact", href: "/contact-us" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms of Service", href: "/terms-of-service" },
+    { label: "Cookie Policy", href: "/cookie-policy" },
 ];
 
 function FooterLegalBtn({ label, href }: { label: string; href: string }) {
@@ -150,7 +149,7 @@ export default function Footer4() {
                                     <ul>
                                         <li className="mb-15">
                                             <a href="mailto:contact@agastron.com" className="text-white text-decoration-none">
-                                                Send Email (contact@agastron.com)
+                                                Send Email
                                             </a>
                                         </li>
                                         <li className="mb-15">

@@ -11,10 +11,10 @@ const ARROW_SVG = (
 );
 
 const AVATARS = [
-    "/assets/imgs/template/avatar/avatar-10.webp",
-    "/assets/imgs/template/avatar/avatar-11.webp",
-    "/assets/imgs/template/avatar/avatar-12.webp",
-    "/assets/imgs/template/avatar/avatar-13.webp",
+    "/assets/imgs/pages/agastron/ruler.jpg",
+    "/assets/imgs/pages/agastron/arani.jpg",
+    "/assets/imgs/pages/agastron/neo.jpg",
+    "/assets/imgs/pages/agastron/mayvi.jpg",
 ];
 
 const QUOTE_SVG = (

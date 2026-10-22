@@ -20,7 +20,7 @@ const SOCIAL_ARROW = (
 );
 
 const SOCIAL_LINKS = [
-  { label: "Twitter", href: "#" },
+  { label: "Youtube", href: "#" },
   { label: "Facebook", href: "#" },
   { label: "Instagram", href: "#" },
   { label: "Linkedin", href: "#" },
@@ -48,10 +48,9 @@ const COMPANY_LINKS = [
 ];
 
 const LEGAL_LINKS = [
-  { label: "Privacy Policy", href: "#" },
-  { label: "Terms of Service", href: "#" },
-  { label: "Cookie Policy", href: "#" },
-  { label: "Contact", href: "/contact-us" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms of Service", href: "/terms-of-service" },
+  { label: "Cookie Policy", href: "/cookie-policy" },
 ];
 
 function FooterServiceTag({ label }: { label: string }) {
@@ -139,7 +138,7 @@ const Footer2 = forwardRef<HTMLElement, Record<string, never>>(function Footer2(
                   <ul>
                     <li className="mb-15">
                       <a href="mailto:contact@agastron.com" className="text-white text-decoration-none">
-                        Send Email (contact@agastron.com)
+                        Send Email
                       </a>
                     </li>
                     <li className="mb-15">
@@ -176,7 +175,7 @@ const Footer2 = forwardRef<HTMLElement, Record<string, never>>(function Footer2(
                 <div className="d-flex flex-wrap align-items-end justify-content-lg-end gap-4 mb-3">
                   <div className="footer-2-hours text-white text-lg-end">
                     <span className="d-block fz-font-md opacity-50">Global HQ</span>
-                    <h5 className="fw-400 common-white">USA &amp; India</h5>
+                    <h5 className="fw-400 common-white">India</h5>
                   </div>
                 </div>
               </div>

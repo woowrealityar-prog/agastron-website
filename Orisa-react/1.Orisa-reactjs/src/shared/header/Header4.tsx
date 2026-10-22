@@ -35,14 +35,14 @@ export default function Header4({ onOpenSearch, onToggleSidebar, onOpenHamburger
                             <div className="row align-items-center">
                                 <div className="col-xxl-3 col-lg-1 col-6">
                                     <div className="at-header-logo">
-                                        <Link to="/">
+                                        <Link to="/" className="d-inline-flex align-items-center">
                                             <img
-                                                width={28}
-                                                height={30}
-                                                src="/assets/imgs/template/logo/favicon.svg"
+                                                height={38}
+                                                src="/assets/imgs/template/logo/agastron-logo-dark.svg"
                                                 alt="Agastron Group"
-                                                style={{ width: "auto", height: "auto" }} loading="lazy" />
-                                            <h6 className="fw-700 fz-24 mb-0">Agastron Group</h6>
+                                                style={{ height: "38px", width: "auto" }}
+                                                loading="lazy"
+                                            />
                                         </Link>
                                     </div>
                                 </div>
@@ -102,7 +102,7 @@ export default function Header4({ onOpenSearch, onToggleSidebar, onOpenHamburger
                                                 />
                                             </svg>
                                         </button>
-                                        <Link className="at-btn d-none d-md-block" to="/pricing">
+                                        <Link className="at-btn d-none d-md-block" to="/contact-us">
                                             <span>
                                                 <span className="text-1 text-capitalize">Get started</span>
                                                 <span className="text-2 text-capitalize">Get started</span>

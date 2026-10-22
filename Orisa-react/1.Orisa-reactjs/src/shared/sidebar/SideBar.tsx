@@ -8,8 +8,6 @@ interface SideBarProps {
   onClose: () => void;
 }
 
-const AVATARS = ["avatar-10", "avatar-11", "avatar-12", "avatar-13", "avatar-14"] as const;
-
 function CloseIconSvg() {
   return (
     <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -117,9 +115,8 @@ export default function SideBar({ open, hamburgerOpen, onClose }: SideBarProps) 
         <div className={`at-offcanvas ${open ? "opened" : ""}`}>
           <div className="at-offcanvas-top d-flex align-items-center justify-content-between">
             <div className="at-offcanvas-logo">
-              <Link to="/" className="text-decoration-none d-inline-flex align-items-center gap-2">
-                <img data-width="30" src="/assets/imgs/template/logo/favicon.svg" alt="Agastron Group" width={30} height={30} />
-                <h6 className="fw-700 fz-24 mb-0">Agastron Group</h6>
+              <Link to="/" className="text-decoration-none d-inline-flex align-items-center">
+                <img src="/assets/imgs/template/logo/agastron-logo-dark.svg" alt="Agastron" height={36} />
               </Link>
             </div>
             <div className="at-offcanvas-close-btn">
@@ -130,9 +127,9 @@ export default function SideBar({ open, hamburgerOpen, onClose }: SideBarProps) 
           </div>
 
           <div className="at-offcanvas-content d-none d-xl-block">
-            <h3 className="at-offcanvas-title">Howdy!</h3>
+            <h3 className="at-offcanvas-title">Agastron Group</h3>
             <p className="fz-font-lg">
-              We blend strategy, creativity, and technology to help brands grow, connect, and stand out in an ever-evolving digital world.
+              Empowering businesses through specialized enterprise, fintech, governance, and event technology.
             </p>
           </div>
 
@@ -140,34 +137,18 @@ export default function SideBar({ open, hamburgerOpen, onClose }: SideBarProps) 
             <nav />
           </div>
 
-          <div className="at-offcanvas-gallery d-none d-xl-block">
-            <div className="sec-2-home-5__avatars-row d-flex gap-2">
-              {AVATARS.map((name) => (
-                <div key={name} className="sec-2-home-5__avatar-sm at-offcanvas-gallery-img">
-                  <img className="img-cover" src={`/assets/imgs/template/avatar/${name}.webp`} alt="" width={80} height={80} />
-                </div>
-              ))}
-            </div>
-          </div>
-
           <div className="at-offcanvas-contact">
             <h5 className="at-offcanvas-title sm">Get in touch</h5>
             <ul>
               <li>
-                <a className="fz-font-lg" href="tel:(212) 555-7398">
-                  (212) 555-7398
+                <a className="fz-font-lg" href="mailto:contact@agastron.com">
+                  contact@agastron.com
                 </a>
               </li>
               <li>
-                <a className="fz-font-lg" href="mailto:hello@orisa.com">
-                  hello@orisa.com
-                </a>
-              </li>
-              <li>
-                <a className="fz-font-lg" href="#" onClick={(e) => e.preventDefault()}>
-                  245 Fifth Avenue, Suite 1800 <br />
-                  New York, NY 10016, USA
-                </a>
+                <span className="fz-font-lg d-block text-neutral-800">
+                  Global HQ: India
+                </span>
               </li>
             </ul>
           </div>
@@ -185,16 +166,12 @@ export default function SideBar({ open, hamburgerOpen, onClose }: SideBarProps) 
         <div className="at-offcanvas-2-wrapper offcanvas-menu sidebar-left">
           <div className="at-offcanvas-2-left">
             <div className="at-header-logo d-flex justify-content-between align-items-center mb-50">
-              <Link to="/" className="text-decoration-none d-inline-flex align-items-center gap-2">
+              <Link to="/" className="text-decoration-none d-inline-flex align-items-center">
                 <img
-                  className="dark-mode-invert"
-                  data-width="30"
-                  src="/assets/imgs/template/logo/favicon.svg"
-                  alt="Agastron Group"
-                  width={30}
-                  height={30}
+                  src="/assets/imgs/template/logo/agastron-logo-dark.svg"
+                  alt="Agastron"
+                  height={36}
                 />
-                <h6 className="fw-700 fz-24 mb-0">Agastron Group</h6>
               </Link>
               <span className="hamburger-close-btn close-sidebar" role="button" tabIndex={0} aria-label="Close" onClick={onClose}>
                 <CloseIconSvg />

@@ -197,6 +197,7 @@ export default function ScrollSectionEffects() {
             scrollTrigger: {
               trigger: section,
               pin: true,
+              anticipatePin: 1,
               start: "top top",
               end: () => `+=${itemArr.length * 50}%`,
               scrub: 1,

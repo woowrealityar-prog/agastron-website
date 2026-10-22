@@ -17,7 +17,7 @@ const OPEN_POSITIONS = [
         title: "Group Strategy & Investments",
         location: "Hyderabad (Remote-Friendly)",
         type: "Open Position",
-        img: "/assets/imgs/pages/img-138.webp",
+        img: "/assets/imgs/pages/agastron/position1.webp",
         subject: "Application: Group Strategy & Investments",
     },
     {
@@ -25,7 +25,7 @@ const OPEN_POSITIONS = [
         title: "Corporate Governance & Compliance",
         location: "Hyderabad (Remote-Friendly)",
         type: "Open Position",
-        img: "/assets/imgs/pages/img-139.webp",
+        img: "/assets/imgs/pages/agastron/position2.webp",
         subject: "Application: Corporate Governance & Compliance",
     },
     {
@@ -33,7 +33,7 @@ const OPEN_POSITIONS = [
         title: "Group Finance & Investor Relations",
         location: "Hyderabad (Remote-Friendly)",
         type: "Open Position",
-        img: "/assets/imgs/pages/img-140.webp",
+        img: "/assets/imgs/pages/agastron/position3.webp",
         subject: "Application: Group Finance & Investor Relations",
     },
     {
@@ -41,7 +41,7 @@ const OPEN_POSITIONS = [
         title: "Technology & IP Management",
         location: "Hyderabad (Remote-Friendly)",
         type: "Open Position",
-        img: "/assets/imgs/pages/img-141.webp",
+        img: "/assets/imgs/pages/agastron/position4.webp",
         subject: "Application: Technology & IP Management",
     },
     {
@@ -49,7 +49,7 @@ const OPEN_POSITIONS = [
         title: "Corporate Communications",
         location: "Hyderabad (Remote-Friendly)",
         type: "Open Position",
-        img: "/assets/imgs/pages/img-138.webp",
+        img: "/assets/imgs/pages/agastron/position5.webp",
         subject: "Application: Corporate Communications",
     },
 ];

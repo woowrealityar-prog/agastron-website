@@ -79,7 +79,7 @@ export default function SectionHero() {
                         >
                             <div data-speed=".8" className="pt-lg-0 pt-50 text-center">
                                 <img
-                                    src="/assets/imgs/pages/img-155.webp"
+                                    src="/assets/imgs/pages/agastron/career.webp"
                                     alt="Join Agastron"
                                     width={1900}
                                     height={800}

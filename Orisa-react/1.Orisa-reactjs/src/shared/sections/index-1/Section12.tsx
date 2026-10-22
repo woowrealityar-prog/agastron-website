@@ -69,15 +69,12 @@ export default function Section12() {
                         <div className="col-12">
                             <div className="d-flex justify-content-between pt-100">
                                 <div className="at-header-logo">
-                                    <Link to="/">
+                                    <Link to="/" className="d-inline-flex align-items-center">
                                         <img
-                                            data-width="30"
-                                            src="/assets/imgs/template/logo/favicon-dark.svg"
-                                            alt="Orisa"
-                                            width={30}
-                                            height={30}
-                                            style={{ width: "auto", height: "auto" }} loading="lazy" />
-                                        <h6 className="fw-700 fz-24 text-white mb-0">Orisa</h6>
+                                            src="/assets/imgs/template/logo/agastron-logo-white.svg"
+                                            alt="Agastron"
+                                            height={38}
+                                            loading="lazy" />
                                     </Link>
                                 </div>
                                 <Link

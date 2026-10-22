@@ -70,9 +70,8 @@ export default function Footer1() {
               <div className="d-flex flex-wrap align-items-start gap-4">
                 <img
                   className="mt-5"
-                  data-width="50"
-                  src="/assets/imgs/template/logo/favicon-dark.svg"
-                  alt="Orisa"
+                  src="/assets/imgs/template/logo/agastron-marks.svg"
+                  alt="Agastron"
                   width={50}
                   height={50}
                 />
@@ -149,7 +148,7 @@ export default function Footer1() {
             <div className="row align-items-center g-3">
               <div className="col-lg-2">
                 <div className="at-footer-copyright-wrap text">
-                  <span className="at-footer-copyright">Orisa © 2026 </span>
+                  <span className="at-footer-copyright">Agastron © 2026 </span>
                 </div>
               </div>
               <div className="col-lg-8">

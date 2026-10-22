@@ -9,9 +9,16 @@ export default function Header10() {
           <div className="container">
             <div className="header-10__inner d-flex align-items-center justify-content-between gap-3">
               <div className="at-header-logo flex-shrink-0">
-                <Link to="/" className="header-10__logo-link d-inline-flex align-items-center gap-1 text-decoration-none">
-                  <img width={27} height={30} className="header-10__mark invert-0" src="/assets/imgs/template/logo/header-10-mark.webp" alt="Orisa" loading="eager" decoding="async" />
-                  <span className="header-10__brand">Orisa</span>
+                <Link to="/" className="header-10__logo-link d-inline-flex align-items-center text-decoration-none">
+                  <img
+                    height={36}
+                    className="header-10__mark invert-0"
+                    src="/assets/imgs/template/logo/agastron-logo-white.svg"
+                    alt="Agastron"
+                    style={{ height: "36px", width: "auto" }}
+                    loading="eager"
+                    decoding="async"
+                  />
                 </Link>
               </div>
               <div className="header-10__actions d-flex align-items-center justify-content-end flex-shrink-0">

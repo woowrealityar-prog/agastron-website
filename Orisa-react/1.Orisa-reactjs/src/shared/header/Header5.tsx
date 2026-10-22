@@ -10,14 +10,14 @@ export default function Header5() {
                         <div className="row align-items-center">
                             <div className="col-xl-2 col-6">
                                 <div className="at-header-logo px-2">
-                                    <Link to="/">
+                                    <Link to="/" className="d-inline-flex align-items-center">
                                         <img
-                                            width={28}
-                                            height={30}
-                                            src="/assets/imgs/template/logo/favicon.svg"
-                                            alt="Orisa"
-                                            style={{ width: "auto", height: "auto" }} loading="lazy" />
-                                        <h6 className="fw-700 fz-24 mb-0">Orisa</h6>
+                                            height={38}
+                                            src="/assets/imgs/template/logo/agastron-logo-dark.svg"
+                                            alt="Agastron"
+                                            style={{ height: "38px", width: "auto" }}
+                                            loading="lazy"
+                                        />
                                     </Link>
                                 </div>
                             </div>

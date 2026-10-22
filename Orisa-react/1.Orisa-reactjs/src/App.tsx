@@ -72,6 +72,9 @@ import TeamDetailsPage from "@/pages/TeamDetailsPage";
 import TeamPage from "@/pages/TeamPage";
 import Team2Page from "@/pages/Team2Page";
 import CareersPage from "@/pages/CareersPage";
+import PrivacyPolicyPage from "@/pages/PrivacyPolicyPage";
+import TermsOfServicePage from "@/pages/TermsOfServicePage";
+import CookiePolicyPage from "@/pages/CookiePolicyPage";
 import NotFoundPage from "@/pages/NotFoundPage";
 
 export default function App() {
@@ -161,6 +164,9 @@ export default function App() {
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/team" element={<CareersPage />} />
         <Route path="/team-details" element={<TeamDetailsPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+        <Route path="/cookie-policy" element={<CookiePolicyPage />} />
       </Route>
       <Route element={<MainLayout headerStyle={2} footerStyle={2} mainClass="" />}>
         <Route path="/portfolio-gallery" element={<PortfolioGalleryPage />} />

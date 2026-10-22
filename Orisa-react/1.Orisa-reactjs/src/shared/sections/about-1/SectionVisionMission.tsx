@@ -191,7 +191,7 @@ export default function SectionVisionMission() {
                                                 height={210}
                                                 className="sec-2-home-5__product-img at_fade_anim"
                                                 data-delay=".5"
-                                                style={{ width: "auto", height: "auto" }}
+                                                style={{ width: "auto", height: "auto", filter: "none !important" }}
                                                 loading="lazy"
                                             />
                                         </div>

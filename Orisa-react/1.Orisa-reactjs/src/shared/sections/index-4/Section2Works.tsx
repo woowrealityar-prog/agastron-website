@@ -132,23 +132,103 @@ export default function Section2Works() {
                     margin: 0;
                     display: flex;
                     flex-direction: column;
-                    gap: 10px;
+                    gap: 14px;
                 }
                 .engine-bullet-item {
                     display: flex;
                     align-items: center;
-                    gap: 10px;
-                    font-size: 14px;
+                    gap: 12px;
+                    font-size: 17px;
                     font-weight: 500;
-                    color: var(--at-neutral-700);
+                    line-height: 1.45;
+                    color: var(--at-neutral-800);
                 }
                 .engine-bullet-dot {
-                    width: 7px;
-                    height: 7px;
+                    width: 8px;
+                    height: 8px;
                     border-radius: 50%;
                     background-color: var(--at-neutral-400);
                     flex-shrink: 0;
                     transition: background-color 0.3s ease;
+                }
+                .sec-2-home-12 .card-home-12-project {
+                    width: 100% !important;
+                    min-height: 560px !important;
+                    padding-top: 52px !important;
+                    padding-bottom: 52px !important;
+                    padding-left: 48px !important;
+                    padding-right: 48px !important;
+                    display: flex !important;
+                    align-items: center !important;
+                    box-sizing: border-box !important;
+                }
+                .sec-2-home-12 .card-home-12-project__image {
+                    flex: 0 0 460px !important;
+                    width: 460px !important;
+                    height: 440px !important;
+                    align-self: stretch !important;
+                }
+                .sec-2-home-12 .card-home-12-project__content {
+                    flex: 1 1 0 !important;
+                    min-width: 0 !important;
+                    display: flex !important;
+                    flex-direction: column !important;
+                    justify-content: center !important;
+                    row-gap: 20px !important;
+                }
+                .sec-2-home-12 .card-home-12-project__label {
+                    font-size: 14px !important;
+                    letter-spacing: 0.08em !important;
+                    font-weight: 600 !important;
+                    color: var(--at-neutral-600) !important;
+                }
+                .sec-2-home-12 .card-home-12-project__title {
+                    font-size: 46px !important;
+                    letter-spacing: -0.03em !important;
+                    line-height: 1.15 !important;
+                }
+                .sec-2-home-12 .card-home-12-project__desc {
+                    font-size: 19px !important;
+                    line-height: 1.6 !important;
+                    color: var(--at-neutral-700) !important;
+                }
+                @media (max-width: 1199px) {
+                    .sec-2-home-12 .card-home-12-project {
+                        padding-top: 40px !important;
+                        padding-bottom: 40px !important;
+                        padding-left: 32px !important;
+                        padding-right: 32px !important;
+                        min-height: auto !important;
+                    }
+                    .sec-2-home-12 .card-home-12-project__image {
+                        flex: 0 0 380px !important;
+                        width: 380px !important;
+                        height: 380px !important;
+                    }
+                }
+                @media (max-width: 991px) {
+                    .sec-2-home-12 .card-home-12-project {
+                        flex-direction: column !important;
+                        padding-top: 36px !important;
+                        padding-bottom: 36px !important;
+                        padding-left: 24px !important;
+                        padding-right: 24px !important;
+                        min-height: auto !important;
+                    }
+                    .sec-2-home-12 .card-home-12-project__image {
+                        flex: 0 0 auto !important;
+                        width: 100% !important;
+                        height: 300px !important;
+                    }
+                    .sec-2-home-12 .card-home-12-project__title {
+                        font-size: 34px !important;
+                    }
+                    .sec-2-home-12 .card-home-12-project__desc {
+                        font-size: 17px !important;
+                    }
+                    .engine-bullet-item {
+                        font-size: 15px !important;
+                    }
                 }
             `}</style>
 

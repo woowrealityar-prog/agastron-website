@@ -90,11 +90,10 @@ export default function Section7() {
                                     </div>
                                     <img
                                         className="p-absolute bottom-0 start-0 m-4"
-                                        src="/assets/imgs/template/logo/logo-w-lg.svg"
-                                        alt="orisa"
-                                        width={227}
-                                        height={70}
-                                        style={{ width: "auto", height: "auto" }} loading="lazy" />
+                                        src="/assets/imgs/template/logo/agastron-logo-white.svg"
+                                        alt="Agastron"
+                                        height={50}
+                                        style={{ width: "auto" }} loading="lazy" />
                                     <div className="content position-absolute top-0 end-0 m-4">
                                         <Link
                                             className="bg-transparent text-uppercase border px-3 py-1 rounded-pill text-white fz-font-label"

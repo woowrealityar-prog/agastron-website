@@ -41,30 +41,13 @@ export default function SectionCultureValues() {
 
                 {/* 3 Values Cards using sec-4-home-12__row structure */}
                 <div className="sec-4-home-12__row">
-                    {/* Value Card 1 - High-Impact Work */}
-                    <div className="card-home-12-process at_fade_anim" data-fade-from="bottom" data-delay="0.05">
-                        <div className="card-home-12-process__image anim-zoomin-wrap">
-                            <img
-                                className="card-home-12-process__img anim-zoomin"
-                                src="/assets/imgs/pages/img-76.webp"
-                                alt="High-Impact Work"
-                                loading="lazy"
-                            />
-                        </div>
-                        <div className="card-home-12-process__text">
-                            <h3 className="card-home-12-process__title">High-Impact Work</h3>
-                            <p className="card-home-12-process__desc">
-                                Build products that serve governments, enterprises, and millions of people.
-                            </p>
-                        </div>
-                    </div>
 
                     {/* Value Card 2 - Great Team Culture */}
                     <div className="card-home-12-process at_fade_anim" data-fade-from="bottom" data-delay="0.15">
                         <div className="card-home-12-process__image anim-zoomin-wrap">
                             <img
                                 className="card-home-12-process__img anim-zoomin"
-                                src="/assets/imgs/pages/img-77.webp"
+                                src="/assets/imgs/pages/agastron/career2.webp"
                                 alt="Great Team Culture"
                                 loading="lazy"
                             />
@@ -77,12 +60,31 @@ export default function SectionCultureValues() {
                         </div>
                     </div>
 
+
+                    {/* Value Card 1 - High-Impact Work */}
+                    <div className="card-home-12-process at_fade_anim" data-fade-from="bottom" data-delay="0.05">
+                        <div className="card-home-12-process__image anim-zoomin-wrap">
+                            <img
+                                className="card-home-12-process__img anim-zoomin"
+                                src="/assets/imgs/pages/agastron/career1.webp"
+                                alt="High-Impact Work"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div className="card-home-12-process__text">
+                            <h3 className="card-home-12-process__title">High-Impact Work</h3>
+                            <p className="card-home-12-process__desc">
+                                Build products that serve governments, enterprises, and millions of people.
+                            </p>
+                        </div>
+                    </div>
+
                     {/* Value Card 3 - Growth & Ownership */}
                     <div className="card-home-12-process at_fade_anim" data-fade-from="bottom" data-delay="0.25">
                         <div className="card-home-12-process__image anim-zoomin-wrap">
                             <img
                                 className="card-home-12-process__img anim-zoomin"
-                                src="/assets/imgs/pages/img-79.webp"
+                                src="/assets/imgs/pages/agastron/career3.webp"
                                 alt="Growth & Ownership"
                                 loading="lazy"
                             />

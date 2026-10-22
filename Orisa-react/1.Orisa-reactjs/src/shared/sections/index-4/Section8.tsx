@@ -17,7 +17,7 @@ const ARTICLES = [
         categoryFilter: "",
         linkPost: "/blog-details",
         linkAuthor: "#",
-        img: "/assets/imgs/pages/img-97.webp",
+        img: "/assets/imgs/pages/agastron/blog1.webp",
         category: "Mayvrion",
         title: "Mayvrion Launches AI-Native Engineering Platform for Enterprise Clients",
         excerpt:
@@ -30,7 +30,7 @@ const ARTICLES = [
         categoryFilter: "",
         linkPost: "/blog-details",
         linkAuthor: "#",
-        img: "/assets/imgs/pages/img-98.webp",
+        img: "/assets/imgs/pages/agastron/blog2.webp",
         category: "Aranidhi",
         title: "Aranidhi Integrates Account Aggregator Framework for Unified Wealth Intelligence",
         excerpt:
@@ -43,7 +43,7 @@ const ARTICLES = [
         categoryFilter: "",
         linkPost: "/blog-details",
         linkAuthor: "#",
-        img: "/assets/imgs/pages/img-99.webp",
+        img: "/assets/imgs/pages/agastron/blog3.webp",
         category: "RulerInsights",
         title: "RulerInsights Introduces Real-Time Governance Intelligence for Governments and Citizens",
         excerpt:
@@ -56,7 +56,7 @@ const ARTICLES = [
         categoryFilter: "",
         linkPost: "/blog-details",
         linkAuthor: "#",
-        img: "/assets/imgs/pages/img-100.webp",
+        img: "/assets/imgs/pages/agastron/blog4.webp",
         category: "NeoFairs",
         title: "NeoFairs Virtual Trade Fairs Cross 1,500 Buyer Meetings Across 21 Countries",
         excerpt:

@@ -10,7 +10,7 @@ export default function Contact2Page() {
           <img
             className="img-cover scale-up"
             data-speed=".8"
-            src="/assets/imgs/pages/img-166.webp"
+            src="/assets/imgs/pages/agastron/contact.webp"
             alt="Contact Agastron"
             width={1920}
             height={800}

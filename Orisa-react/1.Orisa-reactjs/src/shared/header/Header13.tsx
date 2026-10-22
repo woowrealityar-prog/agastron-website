@@ -11,9 +11,14 @@ export default function Header13() {
                             <div className="row align-items-center">
                                 <div className="col-xxl-3 col-lg-1 col-6">
                                     <div className="at-header-logo">
-                                        <Link to="/" className="d-inline-flex align-items-center gap-2 text-decoration-none">
-                                            <img src="/assets/imgs/template/logo/favicon.svg" alt="Orisa" loading="lazy" />
-                                            <p className="h6 fw-700 fz-24 mb-0">Orisa</p>
+                                        <Link to="/" className="d-inline-flex align-items-center text-decoration-none">
+                                            <img
+                                                height={38}
+                                                src="/assets/imgs/template/logo/agastron-logo-dark.svg"
+                                                alt="Agastron"
+                                                style={{ height: "38px", width: "auto" }}
+                                                loading="lazy"
+                                            />
                                         </Link>
                                     </div>
                                 </div>

@@ -11,8 +11,7 @@ export default function Header15() {
                             <div className="col-xl-3 col-6">
                                 <div className="at-header-logo">
                                     <Link to="/" className="d-inline-flex align-items-center gap-2 text-decoration-none">
-                                        <img src="/assets/imgs/template/logo/favicon.svg" alt="Orisa" loading="lazy" />
-                                        <p className="h6 fw-700 fz-24 mb-0">Orisa</p>
+                                        <img src="/assets/imgs/template/logo/agastron-logo-dark.svg" alt="Agastron" height={38} loading="lazy" />
                                     </Link>
                                 </div>
                             </div>

@@ -26,8 +26,7 @@ export default function Footer13() {
                 <div className="footer-13__top">
                     <div className="footer-13__brand at_fade_anim" data-fade-from="bottom" data-delay=".1">
                         <Link className="footer-13__logo" to="/">
-                            <img src="/assets/imgs/template/logo/favicon.svg" alt="Orisa" loading="lazy" />
-                            <span className="footer-13__logo-text">Orisa</span>
+                            <img src="/assets/imgs/template/logo/agastron-logo-white.svg" alt="Agastron" height={36} loading="lazy" />
                         </Link>
                         <p className="footer-13__intro mb-0">
                             We design buildings that age with grace, host human moments, and earn their place on the skyline. Studios in Oslo, New York, and Kyoto.

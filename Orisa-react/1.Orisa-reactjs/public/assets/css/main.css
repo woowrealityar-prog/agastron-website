@@ -3815,6 +3815,10 @@ input[type=color] {
   color: var(--at-neutral-900);
   position: relative;
   font-family: var(--at-ff-body);
+  transition: color 0.3s ease;
+}
+.at-offcanvas-contact ul li a:hover {
+  color: #E5A93C;
 }
 .at-offcanvas-gallery {
   margin-bottom: 65px;
@@ -3873,8 +3877,8 @@ input[type=color] {
   transition: color 0.3s ease, opacity 0.3s ease;
 }
 .at-offcanvas-social__link:hover {
-  color: var(--at-theme-primary, var(--at-common-black));
-  opacity: 0.85;
+  color: #E5A93C;
+  opacity: 1;
 }
 .at-offcanvas-social__link svg {
   flex-shrink: 0;
